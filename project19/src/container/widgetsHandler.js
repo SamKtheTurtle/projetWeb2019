@@ -3,6 +3,7 @@ import LineChartWidget from '../component/lineChart';
 import AreaChartWidget from '../component/areaChart';
 import PieChartWidget from '../component/pieChart';
 import BarChartWidget from '../component/barChart';
+import RadarChartWidget from '../component/radarChart';
 import {Container, Row, Col} from 'reactstrap';
 
 export default class WidgetsHandler extends Component {
@@ -24,6 +25,11 @@ export default class WidgetsHandler extends Component {
           <Col lg={6}>
           <BarChartWidget/>
           </Col>
+        </Row>
+        <Row>
+            <Col>
+            <RadarChartWidget/>
+            </Col>
         </Row>
       </Container>
     );
