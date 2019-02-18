@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LineChartWidget from '../component/lineChart';
 import AreaChartWidget from '../component/areaChart';
+import PieChartWidget from '../component/pieChart';
 import {Container, Row, Col} from 'reactstrap';
 
 export default class WidgetsHandler extends Component {
@@ -13,6 +14,11 @@ export default class WidgetsHandler extends Component {
           </Col>
           <Col lg={4}>
           <AreaChartWidget/>
+          </Col>
+          </Row>
+          <Row>
+           <Col>
+          <PieChartWidget/>
           </Col>
         </Row>
       </Container>
