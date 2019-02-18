@@ -27,9 +27,9 @@ export default class WidgetsHandler extends Component {
           </Col>
         </Row>
         <Row>
-            <Col>
-            <RadarChartWidget/>
-            </Col>
+        <Col lg={6}>
+        <RadarChartWidget/>
+        </Col>
         </Row>
       </Container>
     );
