@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BarChart, Bar, Legend, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
+import './barChart.css';
 const data = 
 [{name: 'Page A', uv: 400, pv: 2400, amt: 2400},
 {name: 'Page B', uv: 800, pv: 2800, amt: 2900},
@@ -10,7 +11,7 @@ export default class BarChartWidget extends Component {
     render() {
         
       return ( 
-<BarChart width={730} height={250} data={data}>
+<BarChart className="barChart" width={730} height={250} data={data}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="name" />
   <YAxis />

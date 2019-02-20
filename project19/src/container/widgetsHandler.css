@@ -1,0 +1,11 @@
+.WidgetLand {
+    background-image: linear-gradient(rgba(16,17,20,1), rgba(0,0,0,0)); 
+  }
+
+.container-fluid {
+  padding-top: 5%;
+}
+
+.colWidget {
+  padding :2%;
+}

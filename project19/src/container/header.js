@@ -9,10 +9,10 @@ export default class Header extends Component {
 <div class="head">
     <Row>
         <Col lg={6}>
-        Widgets
+        WIDGETS
         </Col>
         <Col lg={6}>
-        Data Form
+        DATA FORMS
         </Col>
     </Row>
 </div>

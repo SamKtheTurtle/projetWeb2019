@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { ScatterChart,Scatter, CartesianGrid, XAxis, YAxis, ZAxis, Legend, Tooltip } from 'recharts';
+import './scatterChart.css';
 const data01 = 
 [{'x': 170, 'y': 72, 'z': 100},
 {'x': 150, 'y': 54, 'z': 70},
@@ -16,7 +17,7 @@ export default class ScatterChartWidget extends Component {
     render() {
         
       return ( 
-<ScatterChart width={730} height={250}
+<ScatterChart className="scatterChart" width={730} height={250}
   margin={{ top: 20, right: 20, bottom: 10, left: 10 }}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="x" name="stature" unit="cm" />

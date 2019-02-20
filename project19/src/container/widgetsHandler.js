@@ -6,36 +6,35 @@ import BarChartWidget from '../component/barChart';
 import RadarChartWidget from '../component/radarChart';
 import ScatterChartWidget from '../component/scatterChart';
 import {Container, Row, Col} from 'reactstrap';
+import './widgetsHandler.css';
 
 export default class WidgetsHandler extends Component {
   render() {
     return (
-        <Container>
+      <div className="WidgetLand container-fluid">
+    
         <Row>
-          <Col lg={8}>
-          <LineChartWidget/>
-          </Col>
-          <Col lg={4}>
-          <AreaChartWidget/>
-          </Col>
-          </Row>
-          <Row>
-           <Col lg={6}>
-          <PieChartWidget/>
-          </Col>
-          <Col lg={6}>
-          <BarChartWidget/>
-          </Col>
-        </Row>
-        <Row>
-        <Col lg={6}>
-        <RadarChartWidget/>
+        <Col lg="auto" className="colWidget">
+          <LineChartWidget />
         </Col>
-        <Col lg={6}>
+        <Col lg="auto" className="colWidget">
         <ScatterChartWidget/>
         </Col>
+        <Col  lg="auto" className="colWidget">
+          <PieChartWidget/>
+        </Col>
+        <Col  lg="auto" className="colWidget">
+         <AreaChartWidget/>
+        </Col>
+        <Col  lg="auto" className="colWidget">
+          <BarChartWidget/>
+        </Col>
+        <Col  lg="auto" className="colWidget">
+          <RadarChartWidget/>
+        </Col>
         </Row>
-      </Container>
+
+        </div>
     );
   }
 }

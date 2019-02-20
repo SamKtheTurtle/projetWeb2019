@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { RadarChart, PolarGrid , Legend, PolarAngleAxis, PolarRadiusAxis, Radar} from 'recharts';
+import './radarChart.css';
 
 const data = 
 [{'subject': 'Mécanique', 'A': 85, 'B': 63, 'fullmark': 100},
@@ -10,7 +11,7 @@ const data =
 export default class RadarChartWidget extends Component {
     render() {
       return ( 
-        <RadarChart outerRadius={90} width={730} height={250} data={data}>
+        <RadarChart className="radarChart" outerRadius={90} width={400} height={250} data={data}>
   <PolarGrid />
   <PolarAngleAxis dataKey="subject" />
   <PolarRadiusAxis angle={30} domain={[0, 150]} />

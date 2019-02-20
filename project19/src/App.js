@@ -7,18 +7,14 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <Container>
-          <Header/>
+      <div class="HomePage">
+      <Header/>
         <body>
-        <Row>
-          <Col lg={1}>
-          </Col>
-          <Col lg={11}>
+        
           <WidgetsHandler/>
-          </Col>
-        </Row>
+        
         </body>
-      </Container>
+      </div>
     );
   }
 }

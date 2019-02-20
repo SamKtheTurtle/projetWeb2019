@@ -1,0 +1,7 @@
+.radarChart{
+    border: 6px solid rgb(71, 71, 71);
+    background: rgba(213, 217, 218, 0.205);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-size: calc(5px + 1vmin);
+}
