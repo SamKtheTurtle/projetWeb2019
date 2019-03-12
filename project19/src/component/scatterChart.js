@@ -17,7 +17,7 @@ export default class ScatterChartWidget extends Component {
     render() {
         
       return ( 
-<ScatterChart className="scatterChart" width={730} height={250}
+<ScatterChart className="scatterChart" width={300} height={250}
   margin={{ top: 20, right: 20, bottom: 10, left: 10 }}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="x" name="stature" unit="cm" />

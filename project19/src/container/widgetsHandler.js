@@ -14,22 +14,22 @@ export default class WidgetsHandler extends Component {
       <div className="WidgetLand container-fluid">
     
         <Row>
-        <Col lg="auto" className="colWidget">
+        <Col lg={4} sm={6} xs={12} className="colWidget">
           <LineChartWidget />
         </Col>
-        <Col lg="auto" className="colWidget">
+        <Col lg={4} sm={6} xs={12} className="colWidget">
         <ScatterChartWidget/>
         </Col>
-        <Col  lg="auto" className="colWidget">
+        <Col  lg={4} sm={6} xs={12} className="colWidget">
           <PieChartWidget/>
         </Col>
-        <Col  lg="auto" className="colWidget">
+        <Col  lg={4} sm={6} xs={12} className="colWidget">
          <AreaChartWidget/>
         </Col>
-        <Col  lg="auto" className="colWidget">
+        <Col  lg={4} sm={6} xs={12} className="colWidget">
           <BarChartWidget/>
         </Col>
-        <Col  lg="auto" className="colWidget">
+        <Col  lg={4} sm={6} xs={12} className="colWidget">
           <RadarChartWidget/>
         </Col>
         </Row>

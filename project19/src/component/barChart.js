@@ -11,7 +11,7 @@ export default class BarChartWidget extends Component {
     render() {
         
       return ( 
-<BarChart className="barChart" width={730} height={250} data={data}>
+<BarChart className="barChart" width={300} height={250} data={data}>
   <CartesianGrid strokeDasharray="3 3" />
   <XAxis dataKey="name" />
   <YAxis />

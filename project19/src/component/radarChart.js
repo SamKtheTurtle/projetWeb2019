@@ -11,7 +11,7 @@ const data =
 export default class RadarChartWidget extends Component {
     render() {
       return ( 
-        <RadarChart className="radarChart" outerRadius={90} width={400} height={250} data={data}>
+        <RadarChart className="radarChart" outerRadius={90} width={300} height={250} data={data}>
   <PolarGrid />
   <PolarAngleAxis dataKey="subject" />
   <PolarRadiusAxis angle={30} domain={[0, 150]} />
